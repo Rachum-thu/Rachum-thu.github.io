@@ -45,7 +45,7 @@ Research experience
  
 **Exploring Format Consistency for Instruction Tuning**
 * **Timeline**: Jan 2023 - June 2023
-* Institue: Natural Language Processing Lab, Tsinghua University
+* **Institute**: Natural Language Processing Lab, Tsinghua University
 * **Adviser**: Zhiyuan Liu
 * Evaluated the effect of format consistency of instructions among 3 major multi-tasking datasets
 * Designed a pipeline for conversion of different instruction styles in diverse dataset with LLM
