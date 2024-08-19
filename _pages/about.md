@@ -23,7 +23,7 @@ B.S. in Weiyang Colledge, Tsinghua University, 2024
 
 Research experience
 ======
-DebugBench: Evaluating Debugging Capability of Large Language Models
+**DebugBench: Evaluating Debugging Capability of Large Language Models**
 * Timeline: Sept 2023 - Feb 2024
 * Institute: Natural Language Processing Lab, Tsinghua University
 * Adviser: Zhiyuan Liu
@@ -31,20 +31,20 @@ DebugBench: Evaluating Debugging Capability of Large Language Models
 * Evaluated the debugging capabilities of different models with different bugs under different scenarios
 * Compared the relationship between the task of code generation and debugging
 
-Enhancing Gene Embedding with knowledge from LLMs
+**Enhancing Gene Embedding with knowledge from LLMs**
 * Timeline: June. 2023 - Sept. 2023
 * Institute: Paul G. Allen School of Computer Science & Engineering, University of Washington
 * Adviser: Sheng Wang
 * Enhanced gene graph embedding with text embedding vector from LLMs and retrieved literature by feature fusing
 * Designed a dynamic literature retrieval framework with LLMs
 
-ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world API
+**ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world API**
 * Timeline: Mar 2023 - June 2023
 * Institute: Natural Language Processing Lab, Tsinghua University
 * Adviser: Zhiyuan Liu
 * Proposed a prototype to boost LLM tool calling efficiency based on Tree of Thought
  
-Exploring Format Consistency for Instruction Tuning
+**Exploring Format Consistency for Instruction Tuning**
 * Timeline: Jan 2023 - June 2023
 * Institue: Natural Language Processing Lab, Tsinghua University
 * Adviser: Zhiyuan Liu
