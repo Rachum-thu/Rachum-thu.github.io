@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-01-16-paper-toolllm
 excerpt: 'The work presents ToolLLM, a framework that improves open-source LLMs' tool-use capabilities by creating ToolBench, enabling models like LLaMA to use APIs effectively and perform comparably to ChatGPT.'
-date: 2024-01-16
+date: 2024-1-16
 venue: 'ICLR'
 paperurl: 'https://arxiv.org/abs/2307.16789'
 citation: 'Qin, Yujia, et al. "Toolllm: Facilitating large language models to master 16000+ real-world apis." arXiv preprint arXiv:2307.16789 (2023).'
