@@ -2,7 +2,7 @@
 title: "Toolllm: Facilitating large language models to master 16000+ real-world apis"
 collection: publications
 category: conferences
-permalink: /publication/2024-01-09-paper-debugbench
+permalink: /publication/2024-01-16-paper-toolllm
 excerpt: 'A Benchmark that evalutes the debugging capabilities of LLMs.'
 date: 2024-1-9
 venue: 'ACL'
