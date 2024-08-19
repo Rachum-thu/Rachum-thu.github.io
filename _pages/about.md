@@ -31,7 +31,7 @@ Research experience
 * Compared the relationship between the task of code generation and debugging
 
 **Enhancing Gene Embedding with knowledge from LLMs**
-* **Timeline**: June. 2023 - Sept. 2023
+* **Timeline**: June 2023 - Sept 2023
 * **Institute**: Paul G. Allen School of Computer Science & Engineering, University of Washington
 * **Adviser**: Sheng Wang
 * Enhanced gene graph embedding with text embedding vector from LLMs and retrieved literature by feature fusing
