@@ -3,7 +3,7 @@ title: "Debugbench: Evaluating debugging capability of large language models"
 collection: publications
 category: conferences
 permalink: /publication/2024-01-09-paper-debugbench
-excerpt: 'A Benchmark that evalutes the debugging capabilities of LLMs'
+excerpt: 'A Benchmark that evalutes the debugging capabilities of LLMs.'
 date: 2024-1-9
 venue: 'ACL'
 paperurl: 'https://arxiv.org/abs/2401.04621'
