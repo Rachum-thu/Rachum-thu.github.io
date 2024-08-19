@@ -13,7 +13,7 @@ I am very fortunate to be advised by [Prof. Jiawei Han](https://hanj.cs.illinois
 
 You can find my CV here: [Runchu's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
-[Email](mailto:runchutian@gmail.com) / [Github](https://github.com/Rachum-thu) / [Wechat](../image/wechat.jpg)
+[Email](mailto:runchutian@gmail.com) / [Github](https://github.com/Rachum-thu) / [Wechat](../image/wechat.png)
 
 Education
 ======
