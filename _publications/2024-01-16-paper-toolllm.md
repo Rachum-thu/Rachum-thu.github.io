@@ -1,5 +1,5 @@
 ---
-title: "Debugbench: Evaluating debugging capability of large language models"
+title: "Toolllm: Facilitating large language models to master 16000+ real-world apis"
 collection: publications
 category: conferences
 permalink: /publication/2024-01-09-paper-debugbench
