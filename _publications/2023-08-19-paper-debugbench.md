@@ -2,12 +2,12 @@
 title: "Debugbench: Evaluating debugging capability of large language models"
 collection: publications
 category: conferences
-permalink: /publication/2023-08-19-paper-debugbench.md
+permalink: /publication/2023-08-19-paper-debugbench
 excerpt: 'A Benchmark that evalutes the debugging capabilities of LLMs'
 date: 2024-1-9
-venue: 'ACL 2024'
+venue: 'ACL'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: '[http://academicpages.github.io/files/paper1.pdf](https://arxiv.org/abs/2401.04621)'
+paperurl: 'https://arxiv.org/abs/2401.04621'
 citation: 'Tian, Runchu, et al. "Debugbench: Evaluating debugging capability of large language models." arXiv preprint arXiv:2401.04621 (2024).'
 ---
 
