@@ -21,7 +21,7 @@ repository               : "Rachum-thu/Rachum-thu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "runchu_profile.png"
   name             : "Runchu Tian"
   pronouns         : "he/him"  
   bio              : "Paper Time!"
