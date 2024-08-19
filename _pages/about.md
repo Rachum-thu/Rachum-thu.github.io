@@ -17,9 +17,8 @@ You can find my CV here: [Runchu's Curriculum Vitae](../assets/Curriculum_Vitae.
 
 Education
 ======
-M.S. in Siebel School of Computing and Data Science, University of Illinois Urbana-Champaign, 2026 (expected)
-
-B.S. in Weiyang Colledge, Tsinghua University, 2024
+* M.S. in Siebel School of Computing and Data Science, University of Illinois Urbana-Champaign, 2026 (expected)
+* B.S. in Weiyang Colledge, Tsinghua University, 2024
 
 Research experience
 ======
