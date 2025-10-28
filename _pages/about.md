@@ -35,7 +35,9 @@ Research Experience
   <div>ACL 2025</div>
 </div>
 
-**Authors:** Priyanka Kargupta\*, Runchu Tian\*, Jiawei Han
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Priyanka Kargupta*, Runchu Tian*, Jiawei Han
+</div>
 
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div><strong>Overview:</strong> Developed ClaimSpect, a retrieval-augmented framework that hierarchically deconstructs nuanced claims into structured aspect trees enriched with corpus-specific evidence and perspectives for in-depth analysis.</div>
