@@ -8,6 +8,8 @@ date: 2025-7-1
 venue: 'ACL'
 paperurl: 'https://aclanthology.org/2025.acl-long.1434/'
 citation: 'Kargupta, Priyanka, Runchu Tian, and Jiawei Han. "Beyond True or False: Retrieval-Augmented Hierarchical Analysis of Nuanced Claims." Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2025.'
+header:
+  teaser: paper_images/ClaimSpect.png
 ---
 
 ![ClaimSpect Framework](/images/paper_images/ClaimSpect.png)
