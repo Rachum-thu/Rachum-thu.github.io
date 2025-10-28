@@ -115,6 +115,8 @@
 
 .grid__item {
   margin-bottom: 2em;
+  width: 100%;
+  clear: both;
 
   .page__meta {
     margin: 0 0 4px;
@@ -130,16 +132,14 @@
   }
 
   @include breakpoint($small) {
-    @include gallery(10 of 10);
     .archive__item-teaser {
       max-height: 300px;
     }
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
-    @include gallery(10 of 10);
+    margin-left: 0;
+    margin-right: 0;
 
     .archive__item-teaser {
       max-height: 300px;

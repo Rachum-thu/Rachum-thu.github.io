@@ -32,7 +32,7 @@ Research Experience
 
 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
   <div><strong>Title:</strong> Beyond True or False: Retrieval-Augmented Hierarchical Analysis of Nuanced Claims</div>
-  <div>ACL 2025</div>
+  <div><strong>ACL 2025</strong></div>
 </div>
 
 <div style="margin-top: 0.3em; margin-bottom: 0.3em;">
@@ -41,12 +41,12 @@ Research Experience
 
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div><strong>Overview:</strong> Developed ClaimSpect, a retrieval-augmented framework that hierarchically deconstructs nuanced claims into structured aspect trees enriched with corpus-specific evidence and perspectives for in-depth analysis.</div>
-  <div style="white-space: nowrap; margin-left: 1em;">Oct. 2024 - Feb. 2025</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Oct. 2024 - Feb. 2025</strong></div>
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
   <div><strong>Title:</strong> Retrieval and Structuring Augmented Generation with Large Language Models</div>
-  <div>KDD 2025</div>
+  <div><strong>KDD 2025</strong></div>
 </div>
 
 <div style="margin-top: 0.3em; margin-bottom: 0.3em;">
@@ -55,5 +55,5 @@ Research Experience
 
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div><strong>Overview:</strong> Reviewed the critical role of structured knowledge in RAG.</div>
-  <div style="white-space: nowrap; margin-left: 1em;">Nov. 2024 - Jun. 2025</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Nov. 2024 - Jun. 2025</strong></div>
 </div>
