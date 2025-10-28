@@ -36,7 +36,7 @@ Research Experience
 </div>
 
 <div style="margin-top: 0.3em; margin-bottom: 0.3em;">
-  <strong>Authors:</strong> Priyanka Kargupta*, Runchu Tian*, Jiawei Han
+  <strong>Authors:</strong> Priyanka Kargupta*, <strong>Runchu Tian</strong>*, Jiawei Han
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
@@ -50,7 +50,7 @@ Research Experience
 </div>
 
 <div style="margin-top: 0.3em; margin-bottom: 0.3em;">
-  <strong>Authors:</strong> Pengcheng Jiang, Siru Ouyang, Yizhu Jiao, Ming Zhong, Runchu Tian, Jiawei Han
+  <strong>Authors:</strong> Pengcheng Jiang, Siru Ouyang, Yizhu Jiao, Ming Zhong, <strong>Runchu Tian</strong>, Jiawei Han
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items: baseline;">

@@ -70,8 +70,15 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
-    width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
   }
 }
 
@@ -132,18 +139,11 @@
   }
 
   @include breakpoint($small) {
-    .archive__item-teaser {
-      max-height: 300px;
-    }
   }
 
   @include breakpoint($medium) {
     margin-left: 0;
     margin-right: 0;
-
-    .archive__item-teaser {
-      max-height: 300px;
-    }
 
     .archive__item-excerpt {
       display: block;
