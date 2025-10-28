@@ -19,3 +19,25 @@ Education
 ======
 * M.S. in Siebel School of Computing and Data Science, University of Illinois Urbana-Champaign, 2026 (expected)
 * B.S. in Weiyang Colledge, Tsinghua University, 2024
+
+Research Experience
+======
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong><em>University of Illinois Urbana-Champaign, Data Mining Group</em></strong></div>
+  <div>Sep. 2024 - Present</div>
+</div>
+
+*Adviser: Jiawei Han, Michael Aiken Chair Professor, Siebel School of Computing and Data Science*
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Beyond True or False: Retrieval-Augmented Hierarchical Analysis of Nuanced Claims</div>
+  <div>ACL 2025</div>
+</div>
+
+**Authors:** Priyanka Kargupta\*, Runchu Tian\*, Jiawei Han
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Developed ClaimSpect, a retrieval-augmented framework that hierarchically deconstructs nuanced claims into structured aspect trees enriched with corpus-specific evidence and perspectives for in-depth analysis.</div>
+  <div style="white-space: nowrap; margin-left: 1em;">Oct. 2024 - Feb. 2025</div>
+</div>
