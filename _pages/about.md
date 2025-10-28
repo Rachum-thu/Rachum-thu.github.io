@@ -43,3 +43,17 @@ Research Experience
   <div><strong>Overview:</strong> Developed ClaimSpect, a retrieval-augmented framework that hierarchically deconstructs nuanced claims into structured aspect trees enriched with corpus-specific evidence and perspectives for in-depth analysis.</div>
   <div style="white-space: nowrap; margin-left: 1em;">Oct. 2024 - Feb. 2025</div>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Retrieval and Structuring Augmented Generation with Large Language Models</div>
+  <div>KDD 2025</div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Pengcheng Jiang, Siru Ouyang, Yizhu Jiao, Ming Zhong, Runchu Tian, Jiawei Han
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Reviewed the critical role of structured knowledge in RAG.</div>
+  <div style="white-space: nowrap; margin-left: 1em;">Nov. 2024 - Jun. 2025</div>
+</div>
