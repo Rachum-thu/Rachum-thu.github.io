@@ -57,3 +57,31 @@ Research Experience
   <div><strong>Overview:</strong> Reviewed the critical role of structured knowledge in RAG.</div>
   <div style="white-space: nowrap; margin-left: 1em;"><strong>Nov. 2024 - Jun. 2025</strong></div>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Deepretrieval: Hacking real search engines and retrievers with large language models via reinforcement learning</div>
+  <div><strong>COLM 2025</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Pengcheng Jiang, Jiacheng Lin, Lang Cao, <strong>Runchu Tian</strong>, SeongKu Kang, Zifeng Wang, Jimeng Sun, Jiawei Han
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Explored GRPO-based methods for optimizing LLM query rewriting for search engines.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Dec. 2024 - Jul. 2025</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Topic Coverage-based Demonstration Retrieval for In-Context Learning</div>
+  <div><strong>EMNLP 2025</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Wonbin Kweon, SeongKu Kang, <strong>Runchu Tian</strong>, Pengcheng Jiang, Jiawei Han, Hwanjo Yu
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Proposed TopicK, a topic coverage-based retrieval framework that selects demonstrations by modeling the fine-grained topical knowledge needs for effective in-context learning.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Feb. 2025 - May 2025</strong></div>
+</div>
