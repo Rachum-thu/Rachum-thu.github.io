@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-10-01-paper-topick
 excerpt: 'A topic coverage-based retrieval framework that selects demonstrations to comprehensively cover topic-level knowledge relevant to both the test input and the model for effective in-context learning.'
-date: 2025-10-1
+date: 2025-5-1
 venue: 'EMNLP'
 authors: 'Wonbin Kweon, SeongKu Kang, <strong>Runchu Tian</strong>, Pengcheng Jiang, Jiawei Han, Hwanjo Yu'
 paperurl: 'https://arxiv.org/abs/2509.12451'

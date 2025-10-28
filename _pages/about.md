@@ -85,3 +85,52 @@ Research Experience
   <div><strong>Overview:</strong> Proposed TopicK, a topic coverage-based retrieval framework that selects demonstrations by modeling the fine-grained topical knowledge needs for effective in-context learning.</div>
   <div style="white-space: nowrap; margin-left: 1em;"><strong>Feb. 2025 - May 2025</strong></div>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> LLM-Based Compact Reranking with Document Features for Scientific Retrieval</div>
+  <div><strong>Under Review (TMLR)</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> <strong>Runchu Tian</strong>, Xueqiang Xu, Bowen Jin, SeongKu Kang, Jiawei Han
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Proposed a compact form of document representation in LLM-based listwise reranking.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>May 2025 - Aug. 2025</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> PairSem: LLM-Guided Pairwise Semantic Matching for Scientific Document Retrieval</div>
+  <div><strong>Under Review (WWW 2026)</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Wonbin Kweon, <strong>Runchu Tian</strong>, SeongKu Kang, Pengcheng Jiang, Zhiyong Lu, Jiawei Han, Hwanjo Yu
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Developed PairSem, an unsupervised LLM-guided framework that models scientific concepts as entity-aspect pairs to enable fine-grained, retriever-agnostic scientific document retrieval.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>May 2025 - Aug. 2025</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5em;">
+  <div><strong><em>University of California San Diego, Shang Data Lab (as visiting student)</em></strong></div>
+  <div>Jun. 2025 - Aug. 2025</div>
+</div>
+
+*Adviser: Jingbo Shang, Associate Professor, Department of Computer Science and Halıcıoğlu Data Science Institute*
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Finish First, Perfect Later: Test-Time Token-Level Cross-Validation for Diffusion Large Language Models</div>
+  <div><strong>Under Review (ICLR 2026)</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> <strong>Runchu Tian</strong>*, Junxia Cui*, Xueqiang Xu, Feng Yao, Jingbo Shang
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Introduced a test-time decoding strategy that enables token-level cross-validation and iterative refinement in diffusion LLMs, significantly improving generation quality across diverse language tasks.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Jul. 2025 - Oct. 2025</strong></div>
+</div>

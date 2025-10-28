@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-09-01-paper-deepretrieval
 excerpt: 'A reinforcement learning approach that trains LLMs for query generation through trial and error, achieving significant improvements in retrieval performance across multiple domains.'
-date: 2025-9-1
+date: 2025-7-1
 venue: 'COLM'
 authors: 'Pengcheng Jiang, Jiacheng Lin, Lang Cao, <strong>Runchu Tian</strong>, SeongKu Kang, Zifeng Wang, Jimeng Sun, Jiawei Han'
 paperurl: 'https://openreview.net/forum?id=u9JXu4L17I'
