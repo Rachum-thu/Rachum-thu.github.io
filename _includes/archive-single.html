@@ -41,11 +41,11 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p style="margin-bottom: 0.3em;">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% if post.authors %}
-            <p class="page__meta">{{ post.authors }}</p>
+            <p style="margin-bottom: 0.3em;">{{ post.authors }}</p>
             {% if post.authors contains '*' %}
-              <p style="font-size: smaller; font-style: italic; margin-top: -0.5em;">* denotes equal contribution</p>
+              <p style="font-size: smaller; font-style: italic; margin-top: 0; margin-bottom: 0.5em;">* denotes equal contribution</p>
             {% endif %}
           {% endif %}
         {% elsif post.date %}
