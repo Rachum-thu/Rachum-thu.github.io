@@ -134,3 +134,80 @@ Research Experience
   <div><strong>Overview:</strong> Introduced a test-time decoding strategy that enables token-level cross-validation and iterative refinement in diffusion LLMs, significantly improving generation quality across diverse language tasks.</div>
   <div style="white-space: nowrap; margin-left: 1em;"><strong>Jul. 2025 - Oct. 2025</strong></div>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1.5em;">
+  <div><strong><em>Tsinghua University, Natural Language Processing Lab</em></strong></div>
+  <div>Mar. 2023 - Jun. 2023</div>
+</div>
+
+*Adviser: Zhiyuan Liu, Associate Professor, Department of Computer Science and Technology*
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs</div>
+  <div><strong>ICLR 2024 spotlight</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Yujia Qin, Shihao Liang, Yining Ye, Kunlun Zhu, Lan Yan, Yaxi Lu, Yankai Lin, Xin Cong, Xiangru Tang, Bill Qian, Sihan Zhao, Lauren Hong, <strong>Runchu Tian</strong>, Ruobing Xie, Jie Zhou, Mark Gerstein, Dahai Li, Zhiyuan Liu, Maosong Sun
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Proposed a comprehensive framework for enabling large language models to use external APIs through automated dataset construction (ToolBench), a reasoning-enhanced training algorithm, an evaluation suite (ToolEval) and a language model (ToolLLaMA), which achieves ChatGPT-level tool-use performance.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Mar. 2023 - Jun. 2023</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> DebugBench: Evaluating Debugging Capability of Large Language Models</div>
+  <div><strong>ACL 2024</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> <strong>Runchu Tian</strong>*, Yining Ye*, Yujia Qin, Xin Cong, Yankai Lin, Yinxu Pan, Yesai Wu, Haotian Hui, Weichuan Liu, Zhiyuan Liu, Maosong Sun
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Introduced a benchmark of 4,253 instances across multiple programming languages and bug types to systematically evaluate and analyze the debugging capabilities of large language models.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Sept. 2023 - Feb. 2024</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Distance between Relevant Information Pieces Causes Bias in Long-Context LLMs</div>
+  <div><strong>ACL 2025</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> <strong>Runchu Tian</strong>*, Yanghao Li*, Yuepeng Fu, Siyang Deng, Qinyu Luo, Cheng Qian, Shuo Wang, Xin Cong, Zhong Zhang, Yesai Wu, Yankai Lin, Huadong Wang, Xiaojiang Liu
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Introduced a benchmark for evaluating positional bias in large language models when handling multiple pieces of relevant information, revealing the significant bias based on the spacing of relevant information.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>May 2024 - Aug. 2024</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Tool Learning with Foundation Models</div>
+  <div><strong>ACM Computing Surveys, 2024</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Yujia Qin, Shengding Hu, Yankai Lin, Weize Chen, Ning Ding, Ganqu Cui, Zheni Zeng, Yufei Huang, Chaojun Xiao, Chi Han, Yi Ren Fung, Yusheng Su, Huadong Wang, Cheng Qian, <strong>Runchu Tian</strong>, Kunlun Zhu, Shihao Liang, Xingyu Shen ...
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Provided a comprehensive survey and framework for tool learning with foundation models.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Jan. 2023 - May 2023</strong></div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1em;">
+  <div><strong>Title:</strong> Exploring Format Consistency for Instruction Tuning</div>
+  <div><strong>TMLR</strong></div>
+</div>
+
+<div style="margin-top: 0.3em; margin-bottom: 0.3em;">
+  <strong>Authors:</strong> Shihao Liang*, <strong>Runchu Tian</strong>*, Kunlun Zhu*, Yujia Qin, Huadong Wang, Xin Cong, Zhiyuan Liu, Xiaojiang Liu, Maosong Sun
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div><strong>Overview:</strong> Introduced a framework that automatically transfers instruction formats across datasets to ensure format consistency in instruction tuning, showing that consistent formats improve model performance.</div>
+  <div style="white-space: nowrap; margin-left: 1em;"><strong>Jan. 2023 - June 2023</strong></div>
+</div>
