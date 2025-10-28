@@ -6,6 +6,7 @@ permalink: /publication/2025-07-01-paper-claimspect
 excerpt: 'A retrieval-augmented generation framework that hierarchically deconstructs nuanced claims into structured aspect trees enriched with corpus-specific evidence and perspectives.'
 date: 2025-7-1
 venue: 'ACL'
+authors: 'Priyanka Kargupta*, <strong>Runchu Tian</strong>*, Jiawei Han'
 paperurl: 'https://aclanthology.org/2025.acl-long.1434/'
 citation: 'Kargupta, Priyanka, Runchu Tian, and Jiawei Han. "Beyond True or False: Retrieval-Augmented Hierarchical Analysis of Nuanced Claims." Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2025.'
 header:
