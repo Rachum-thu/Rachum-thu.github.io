@@ -9,11 +9,7 @@ layout: default
 
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}
-              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
-            {%- else -%}
-              {{ site.title }}
-            {%- endif %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }} (田润初)
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
@@ -153,7 +149,7 @@ layout: default
                 100% { transform: translateY(-50%) rotate(360deg); }
               }
             </style>
-            <div style="display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+            <div style="display: flex; align-items: center; justify-content: center; margin: 0 auto; margin-left: 30px;">
               <!-- OLD CODE - Toggle button removed -->
               <a href="https://github.com/Rachum-thu" target="_blank" rel="noopener noreferrer" style="margin-right: 5px;">
                 <i class="fab fa-github fa-lg"></i>
@@ -161,11 +157,63 @@ layout: default
               <a href="https://x.com/Runchu_Tian" target="_blank" rel="noopener noreferrer" style="margin-right: 5px;">
                 <i class="fa fa-twitter fa-lg"></i>
               </a>
-              <a href="https://scholar.google.com/citations?user=u6ex8v8AAAAJ" target="_blank" rel="noopener noreferrer">
+              <a href="https://scholar.google.com/citations?user=u6ex8v8AAAAJ" target="_blank" rel="noopener noreferrer" style="margin-right: 5px;">
                 <i class="ai ai-google-scholar ai-lg"></i>
+              </a>
+              <a href="javascript:void(0);" onclick="copyEmail()" style="margin-right: 5px;" title="Click to copy email">
+                <i class="fas fa-envelope fa-lg"></i>
+              </a>
+              <a href="javascript:void(0);" onclick="showWechatQR()" title="Click to view WeChat QR code">
+                <i class="fab fa-weixin fa-lg"></i>
               </a>
               <!-- <img src="assets/img/signature.png" style="width: 80px; height: auto; padding-right: -20px;"> -->
             </div>
+
+            <!-- WeChat QR Code Modal -->
+            <div id="wechat-modal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);" onclick="closeWechatQR()">
+              <div style="position: relative; margin: 10% auto; width: fit-content; max-width: 90%;">
+                <img src="{{ 'assets/img/wechat_qr.jpg' | relative_url }}" alt="WeChat QR Code" style="max-width: 300px; max-height: 400px; display: block; border-radius: 10px;">
+                <span style="position: absolute; top: -30px; right: 0; color: white; font-size: 30px; cursor: pointer;">&times;</span>
+              </div>
+            </div>
+
+            <script>
+              function copyEmail() {
+                const email = 'runchut2@illinois.edu';
+                navigator.clipboard.writeText(email).then(function() {
+                  alert('Email copied to clipboard: ' + email);
+                }).catch(function(err) {
+                  console.error('Failed to copy email: ', err);
+                  // Fallback for older browsers
+                  const textArea = document.createElement('textarea');
+                  textArea.value = email;
+                  document.body.appendChild(textArea);
+                  textArea.select();
+                  try {
+                    document.execCommand('copy');
+                    alert('Email copied to clipboard: ' + email);
+                  } catch (err) {
+                    alert('Please copy manually: ' + email);
+                  }
+                  document.body.removeChild(textArea);
+                });
+              }
+
+              function showWechatQR() {
+                document.getElementById('wechat-modal').style.display = 'block';
+              }
+
+              function closeWechatQR() {
+                document.getElementById('wechat-modal').style.display = 'none';
+              }
+
+              // Close modal when pressing ESC key
+              document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                  closeWechatQR();
+                }
+              });
+            </script>
             <!-- <a class="float-right">Email: pj20[at]illinois.edu</a> -->
             <!-- <a href="{{'assets/pdf/CV.pdf'}}" target="_blank" rel="noopener noreferrer" class="float-right">CV <i class="fas fa-file-pdf"></i></a> -->
             {%- if page.profile.address %}
@@ -196,13 +244,13 @@ layout: default
           {% if page.selected_papers -%}
             <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
               <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">
-                <span class="section-title publications-title"><strong>Publications</strong> <small><span style="font-size: 0.75em;">(2022.9 - present)</span></small></span>
+                <span class="section-title publications-title"><strong>Publications</strong> <small><span style="font-size: 0.75em;">(2023.6 - present)</span></small></span>
               </a>
             </h2>
             {%- include selected_papers.html %}
           {% endif %}
 
-          <!-- Industry Experience -->
+          {% comment %} INDUSTRY EXPERIENCE SECTION COMMENTED OUT
           <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
             <a style="color: inherit;">
               <span class="section-title experience-title"><strong>Industry Experience</strong></span>
@@ -252,8 +300,9 @@ layout: default
               </div>
             </div>
           </details>
+          {% endcomment %}
 
-          <!-- Talks -->
+          {% comment %} TALKS SECTION COMMENTED OUT
           <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
             <a style="color: inherit;">
               <span class="section-title talks-title"><strong>Tutorials & Talks</strong></span>
@@ -335,8 +384,9 @@ layout: default
               <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">KDD 2023 Tutorial | <a href="https://pyhealth.readthedocs.io/en/develop/" target="_blank" rel="noopener noreferrer">Website Link</a> | Aug 06 2023</p>
             </div>
           </div>
+          {% endcomment %}
 
-          <!-- Software -->
+          {% comment %} SOFTWARE SECTION COMMENTED OUT
           <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
             <a href="/software/" style="color: inherit;">
               <span class="section-title software-title"><strong>Software & Models</strong></span>
@@ -410,7 +460,7 @@ layout: default
             
           </div>
           <p>Developer: <b>Patrick Jiang</b>, Jiacheng Lin, Lang Cao</p>
-
+          {% endcomment %}
 
           <!-- Social -->
           {%- if page.social %}
@@ -431,19 +481,25 @@ layout: default
 
         <div style="display: flex; justify-content: space-between; align-items: center;">
           <div style="display: flex; align-items: left;">
-            <a href="https://scholar.google.com/citations?hl=en&user=TejDN9wAAAAJ&view_op=list_works&authuser=2&sortby=pubdate">
+            <a href="https://scholar.google.com/citations?user=u6ex8v8AAAAJ">
               <img src="assets/img/google-scholar.png" style="width: 100px; height: auto;">
             </a>
-            <a href="https://github.com/pat-jj">
+            <a href="https://github.com/Rachum-thu">
               <img src="assets/img/github-icon.png" style="width: 100px; height: auto;">
             </a>
             </div>
           <div id="clustrmaps-container">
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=bWiKAH2bSIjAc4dLQ15AfqQN92lAkCtT2Bc8n2ovxw8"></script>
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=XgBviHSrc30dsWqfKCiHRhDKCaisj6t891c01FnnZv4"></script>
           </div>
 
         </div>
-        
-      
+
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+          <p style="font-size: 0.85em; color: #888;">
+            Thank <a href="https://pat-jj.github.io/" target="_blank" rel="noopener noreferrer" style="color: #888; text-decoration: underline;">Patrick Jiang</a> for the design of website template.
+          </p>
+        </div>
+
+
 
 </div>

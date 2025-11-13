@@ -7,14 +7,20 @@
     url: https://xuanwang91.github.io/
   - firstname: ["Zifeng", "Z."]
     url: https://zifengwang.xyz/
+  - firstname: ["Shuo"]
+    url: https://scholar.google.com/citations?user=5vm5yAMAAAAJ&hl=en
+  - firstname: ["Huadong"]
+    url: https://scholar.google.com/citations?user=DeuwxT8AAAAJ&hl=zh-CN
 
 "Han":
   - firstname: ["Jiawei"]
     url: http://hanj.cs.illinois.edu/
 
-"Sun": 
+"Sun":
   - firstname: ["Jimeng"]
-    url: https://www.sunlab.org/
+    url: https://siebelschool.illinois.edu/about/people/faculty/jimeng
+  - firstname: ["Maosong"]
+    url: https://www.cs.tsinghua.edu.cn/csen/info/1312/4394.htm
 
 "Jin":
   - firstname: ["Bowen"]
@@ -27,12 +33,16 @@
 "Wu":
   - firstname: ["Zhenbang"]
     url: https://zzachw.github.io/
+  - firstname: ["Yesai"]
+    url: https://scholar.google.com/citations?user=FAbe3_sAAAAJ&hl=zh-CN
 
 "Lin":
   - firstname: ["Zhen"]
     url: https://zlin7.github.io/
   - firstname: ["Jiacheng"]
     url: https://linjc16.github.io/
+  - firstname: ["Yankai"]
+    url: https://linyankai.github.io/
 
 "Gao":
   - firstname: ["Junyi"]
@@ -51,6 +61,8 @@
 "Fu":
   - firstname: ["Tianfan"]
     url: https://futianfan.github.io/
+  - firstname: ["Yuepeng"]
+    url: https://scholar.google.com/citations?user=pAAONG4AAAAJ&hl=zh-CN
 
 "Cross":
   - firstname: ["Adam"]
@@ -75,6 +87,8 @@
 "Jiang":
   - firstname: ["Minhao"]
     url: https://minhaoj2.github.io/
+  - firstname: ["Pengcheng"]
+    url: https://pat-jj.github.io/
 
 "Kass-Hout":
   - firstname: ["Taha"]
@@ -87,6 +101,8 @@
 "Zhang":
   - firstname: ["Yunyi"]
     url: https://yzhan238.github.io/
+  - firstname: ["Zhong"]
+    url: https://scholar.google.com/citations?user=NX5TeR4AAAAJ&hl=en
 
 "Lee":
   - firstname: ["Dongha"]
@@ -108,7 +124,111 @@
   - firstname: ["Xueqiang"]
     url: https://www.linkedin.com/in/xueqiang-xu/
 
+"Li":
+  - firstname: ["Yanghao"]
+    url: https://aclanthology.org/people/yanghao-li/
+  - firstname: ["Dahai"]
+    url: https://iclr.cc/virtual/2024/papers.html?filter=author&search=dahai%20li
 
+"Deng":
+  - firstname: ["Siyang"]
+    url: https://aclanthology.org/people/siyang-deng/
 
+"Luo":
+  - firstname: ["Qinyu"]
+    url: https://github.com/LOGIC-10
 
+"Qian":
+  - firstname: ["Cheng"]
+    url: https://qiancheng0.github.io/
+  - firstname: ["Bill"]
+    url: https://scholar.google.com/citations?user=NkWhuzsAAAAJ&hl=en
+
+"Cong":
+  - firstname: ["Xin"]
+    url: https://www.stat.tsinghua.edu.cn/en/info/1023/1432.htm
+
+"Liu":
+  - firstname: ["Xiaojiang"]
+    url: https://scholar.google.com/citations?hl=en&user=ukdqC6IAAAAJ&view_op=list_works&sortby=pubdate
+  - firstname: ["Zhiyuan"]
+    url: https://nlp.csai.tsinghua.edu.cn/~lzy/
+  - firstname: ["Weichuan"]
+    url: https://aclanthology.org/people/liu-weichuan/
+
+"Ye":
+  - firstname: ["Yining"]
+    url: https://yynnyy.cn/about/
+
+"Qin":
+  - firstname: ["Yujia"]
+    url: https://yujia-qin.github.io/
+
+"Pan":
+  - firstname: ["Yinxu"]
+    url: https://openreview.net/profile?id=~Yinxu_Pan1
+
+"Hui":
+  - firstname: ["Haotian"]
+    url: https://aclanthology.org/people/hui-haotian/
+
+"Kargupta":
+  - firstname: ["Priyanka"]
+    url: https://pkargupta.github.io/
+
+"Liang":
+  - firstname: ["Shihao"]
+    url: https://scholar.google.com/citations?user=K-v_r9oAAAAJ&hl=zh-CN
+
+"Zhu":
+  - firstname: ["Kunlun"]
+    url: https://kunlun-zhu.github.io/
+
+"Kweon":
+  - firstname: ["Wonbin"]
+    url: https://wonbinkweon.github.io/
+
+"Ouyang":
+  - firstname: ["Siru"]
+    url: https://scholar.google.com/citations?user=fetoihAAAAAJ&hl=en
+
+"Jiao":
+  - firstname: ["Yizhu"]
+    url: https://yzjiao.github.io/
+
+"Zhong":
+  - firstname: ["Ming"]
+    url: https://maszhongming.github.io/
+
+"Yan":
+  - firstname: ["Lan"]
+    url: https://scholar.google.com/citations?user=Ewrk8eYAAAAJ&hl=en
+
+"Lu":
+  - firstname: ["Yaxi"]
+    url: https://github.com/luyaxi
+
+"Tang":
+  - firstname: ["Xiangru"]
+    url: https://xiangrutang.github.io/
+
+"Zhao":
+  - firstname: ["Sihan"]
+    url: https://openreview.net/profile?id=~Sihan_Zhao1
+
+"Hong":
+  - firstname: ["Lauren"]
+    url: https://scholar.google.com/citations?user=hJ0TPNQAAAAJ&hl=en
+
+"Xie":
+  - firstname: ["Ruobing"]
+    url: https://ruobingxie.github.io/
+
+"Zhou":
+  - firstname: ["Jie"]
+    url: https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en
+
+"Gerstein":
+  - firstname: ["Mark"]
+    url: https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en
 

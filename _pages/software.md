@@ -2,11 +2,13 @@
 layout: page
 title: software
 permalink: /software/
-nav: true
+nav: false  # Hidden from navigation bar
 nav_order: 2
 ---
 
 ---------
+
+<!-- Patrick's software projects commented out - kept as reference for future use
 
 **PyHealth**  <img src="/assets/img/publication_preview/pyhealth-logo.png" alt="PyHealth Logo" class="pyhealth-logo">
 ===
@@ -41,5 +43,6 @@ data scientists. Upon the time of writing, PyHealth has received
 
 In today's digital era, efficiently extracting structured knowledge from raw text is more crucial than ever. TxBKG rises to this challenge, leveraging the capabilities of Large Language Models (LLM) to derive Knowledge Graphs (KG) from unstructured content. One of TxBKG's standout features is its adaptability: users can craft their own prompts, directing the LLM to extract KGs tailored to their unique needs. Beyond extraction, the platform's intuitive interface empowers users to modify the resulting KGs, ensuring the data aligns perfectly with their objectives. An added advantage is TxBKG's support for Optical Character Recognition (OCR) from PDF files, transforming static documents into dynamic, structured knowledge. Furthermore, TxBKG prioritizes user convenience; individuals can save their customized grouped prompts, texts, and extracted KGs using their Google account, ensuring their tailored configurations and data are always within reach. Dive deep into the realm of structured data extraction with TxBKG.
 
+-->
 
 ---------

@@ -47,8 +47,8 @@
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
           
-          {%- if author_last_name == "Jiang" -%}
-              {%- if author.first == "Pengcheng" or author.first == "Patrick" -%}
+          {%- if author_last_name == "Tian" -%}
+              {%- if author.first == "Runchu" or author.first == "R." -%}
                   {%- assign author_is_self = true -%}
               {%- endif -%}
           {%- endif -%}
