@@ -20,7 +20,7 @@ layout: default
 
         <article>
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" style="margin-top: 0;">{%- comment -%} Align photo with title {%- endcomment -%}
+          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" style="margin-top: -30px;">{%- comment -%} Align photo with title {%- endcomment -%}
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
               {%- assign profile_image_anime_path = page.profile.image_anime | prepend: 'assets/img/' -%}
