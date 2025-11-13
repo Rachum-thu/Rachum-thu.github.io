@@ -1,0 +1,337 @@
+@inproceedings{jiang2025s3,
+        show={true},
+        abbr={EMNLP'25},
+        title={s3: You Don't Need That Much Data to Train a Search Agent via RL}, 
+        abstract={Retrieval-augmented generation (RAG) systems empower large language models (LLMs)
+to access external knowledge during inference. Recent advances have enabled LLMs
+to act as search agents via reinforcement learning (RL), improving information acquisition
+through multi-turn interactions with retrieval
+engines. However, existing approaches either
+optimize retrieval using search-only metrics
+(e.g., NDCG) that ignore downstream utility or
+fine-tune the entire LLM to jointly reason and
+retrieve—entangling retrieval with generation
+and limiting the real search utility and compatibility with frozen or proprietary models. In
+this work, we propose s3, a lightweight, modelagnostic framework that decouples the searcher
+from the generator and trains the searcher using
+a Gain Beyond RAG reward: the improvement
+in generation accuracy over naïve RAG. s3 requires only 2.4k training samples to outperform
+baselines trained on over 70x more data, consistently delivering stronger downstream performance across six general QA and five medical
+QA benchmarks.},
+        author={Pengcheng Jiang and Xueqiang Xu and Jiacheng Lin and Jinfeng Xiao and Zifeng Wang and Jimeng Sun and Jiawei Han},
+        year={2025},
+        booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+        selected={true},
+        preview={s3.png},
+        pdf={https://arxiv.org/abs/2505.14146},
+        code={https://github.com/pat-jj/s3},
+        stars={true},
+        bibtex_show={true},
+        slides={s3_slides.pdf},
+        poster={s3_poster.pdf}
+}
+
+@inproceedings{jiang2025deepretrieval,
+        show={true},
+        abbr={COLM'25},
+        title={DeepRetrieval: Hacking Real Search Engines and Retrievers with Large Language Models via Reinforcement Learning}, 
+        abstract={Information retrieval systems are crucial for enabling effective access to
+large document collections. Recent approaches have leveraged Large Language Models (LLMs) to enhance retrieval performance through query
+augmentation, but often rely on expensive supervised learning or distillation techniques that require significant computational resources and handlabeled data. We introduce DeepRetrieval, a reinforcement learning (RL) approach that trains LLMs for query generation
+through trial and error without supervised data (reference query). Using retrieval metrics as rewards,
+our system generates queries that maximize retrieval performance. DeepRetrieval outperforms leading methods on literature search with 65.07%
+(vs. previous SOTA 24.68%) recall for publication search and 63.18% (vs.
+previous SOTA 32.11%) recall for trial search using real-world search engines. DeepRetrieval also dominates in evidence-seeking retrieval, classic
+information retrieval and SQL database search. With only 3B parameters, it
+outperforms industry-leading models like GPT-4o and Claude-3.5-Sonnet
+on those tasks. These results demonstrate that our RL approach offers a
+more efficient and effective paradigm for information retrieval. Our data
+and code are available at: https://github.com/pat-jj/DeepRetrieval.},
+        author={Pengcheng Jiang and Jiacheng Lin and Lang Cao and R. Tian and S. Kang and Z. Wang and Jimeng Sun and Jiawei Han},
+        booktitle = {The Second Conference on Language Modeling},
+        year={2025},
+        journal = {arXiv preprint arXiv: 2503.00223},
+        selected={true},
+        preview={deepretrieval.png},
+        pdf_v1={https://arxiv.org/abs/2503.00223v1},
+        pdf_v2={https://arxiv.org/abs/2503.00223v3},
+        slides={slides_deepretrieval.pdf},
+        code={https://github.com/pat-jj/DeepRetrieval},
+        stars={true},
+        bibtex_show={true},
+        note={<span style="color: blue;">(The first search agent trained with on-policy RL)</span>},
+        poster={deepretrieval_poster.pdf},
+}
+
+@article{jiang2025ras,
+      show={true},
+      abbr={Preprint},
+      title={RAS: Retrieval-And-Structuring for Knowledge-Intensive LLM Generation},
+      abstract={Retrieval-augmented language models often struggle with knowledge-intensive tasks due to inefficient retrieval, unstructured knowledge integration, and single-pass architectures. We present Retrieval-And-Structuring (RAS), a novel framework that dynamically constructs and reasons over query-specific knowledge graphs through iterative retrieval and structuring. RAS introduces four key technical innovations: (1) a themescoped retrieval mechanism that efficiently narrows the search space while maintaining retrieval quality, (2) an action planning module that determines knowledge needs and generates focused sub-queries, (3) a dynamic knowledge structuring approach that converts retrieved text into an evolving knowledge graph, and (4) a graph-augmented answering component that leverages the accumulated structured information. Our framework achieves state-of-the-art performance, surpassing leading baselines by 6.4% with open-source language models and 7.0% with proprietary models on seven knowledge-intensive generation datasets across all evaluation metrics. Detailed ablation studies verify the contribution of each technical component to the overall system performance.},
+      author={Pengcheng Jiang and Lang Cao and Ruike Zhu and Minhao Jiang and Yunyi Zhang and Jimeng Sun and Jiawei Han},
+      year={2025},
+      eprint={2502.10996},
+      journal={arXiv preprint arXiv: 2502.10996},
+      selected={true},
+      preview={ras.png},
+      pdf={https://arxiv.org/abs/2502.10996},
+      slides={ras_slides.pdf},
+      code={https://github.com/pat-jj/Retrieval-And-Structure},
+      stars={true},
+      bibtex_show={true},
+}
+
+
+@inproceedings{jiang2025kare,
+      show={true},
+      abbr={ICLR'25},
+      title={Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval}, 
+      abstract={Large language models (LLMs) have demonstrated significant potential in clinical decision support. Yet LLMs still suffer from hallucinations and lack fine-grained contextual medical knowledge, limiting their high-stake healthcare applications such as clinical diagnosis. Traditional retrieval-augmented generation (RAG) methods attempt to address these limitations but frequently retrieve sparse or irrelevant information, undermining prediction accuracy. We introduce KARE, a novel framework that integrates knowledge graph (KG) community-level retrieval with LLM reasoning to enhance healthcare predictions. KARE constructs a comprehensive multi-source KG by integrating biomedical databases, clinical literature, and LLM-generated insights, and organizes it using hierarchical graph community detection and summarization for precise and contextually relevant information retrieval. Our key innovations include: (1) a dense medical knowledge structuring approach enabling accurate retrieval of relevant information; (2) a dynamic knowledge retrieval mechanism that enriches patient contexts with focused, multi-faceted medical insights; and (3) a reasoning-enhanced prediction framework that leverages these enriched contexts to produce both accurate and interpretable clinical predictions. Extensive experiments demonstrate that KARE outperforms leading models by up to 10.8-15.0% on MIMIC-III and 12.6-12.7% on MIMIC-IV for mortality and readmission predictions. In addition to its impressive prediction accuracy, our framework leverages the reasoning capabilities of LLMs, enhancing the trustworthiness of clinical predictions.},
+      author={Pengcheng Jiang and Cao Xiao and Minhao Jiang and Parminder Bhatia and Taha Kass-Hout and Jimeng Sun and Jiawei Han},
+      booktitle = {The Thirteenth International Conference on Learning Representations},
+      year={2025},
+      selected={true},
+      preview={kare_abstract.png},
+      pdf={https://arxiv.org/abs/2410.04585},
+      slides={kare_slides.pdf},
+      code={https://github.com/pat-jj/KARE},
+      stars={true},
+      bibtex_show={true},
+      poster={kare_poster.pdf},
+}
+
+
+@inproceedings{jiang2024kgfit,
+      show={true},
+      abbr={NeurIPS'24},
+      title={KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge}, 
+      abstract={Knowledge Graph Embedding (KGE) techniques are crucial in learning compact representations of entities and relations within a knowledge graph, facilitating efficient reasoning and knowledge discovery. While existing methods typically focus either on training KGE models solely based on graph structure or fine-tuning pre-trained language models with classification data in KG, \texttt{KG-FIT} leverages LLM-guided refinement to construct a semantically coherent hierarchical structure of entity clusters. By incorporating this hierarchical knowledge along with textual information during the fine-tuning process, \texttt{KG-FIT} effectively captures both global semantics from the LLM and local semantics from the KG. Extensive experiments on the benchmark datasets FB15K-237, YAGO3-10, and PrimeKG demonstrate the superiority of \texttt{KG-FIT} over state-of-the-art pre-trained language model-based methods, achieving improvements of 14.4\%, 13.5\%, and 11.9\% in the Hits@10 metric for the link prediction task, respectively. Furthermore, \texttt{KG-FIT} yields substantial performance gains of 12.6\%, 6.7\%, and 17.7\% compared to the structure-based base models upon which it is built. These results highlight the effectiveness of \texttt{KG-FIT} in incorporating open-world knowledge from LLMs to significantly enhance the expressiveness and informativeness of KG embeddings.},
+      author={Pengcheng Jiang and Lang Cao and Cao Xiao and Parminder Bhatia and Jimeng Sun and Jiawei Han},
+      selected={true},
+      preview={kgfit_abstract.png},
+      slides={kgfit_slides.pdf},
+      pdf={https://arxiv.org/pdf/2405.16412},
+      code={https://github.com/pat-jj/KG-FIT},
+      booktitle={The Thirty-Eighth Annual Conference on Neural Information Processing Systems},
+      year={2024},
+      stars={true},
+      bibtex_show={true},
+      poster={kgfit_poster.pdf},
+}
+
+
+@inproceedings{jiang2024graphcare,
+      show={true},
+      abbr={ICLR'24},
+      title={GraphCare: Enhancing Healthcare Predictions with Personalized Knowledge Graphs}, 
+      abstract={Clinical predictive models often rely on patients' electronic health records (EHR),
+                but integrating medical knowledge to enhance predictions and decision-making is
+                challenging. This is because personalized predictions require personalized knowledge
+                graphs (KGs), which are difficult to generate from patient EHR data. To
+                address this, we propose GRAPHCARE, an open-world framework that uses external
+                KGs to improve EHR-based predictions. Our method extracts knowledge
+                from large language models (LLMs) and external biomedical KGs to build patientspecific
+                KGs, which are then used to train our proposed Bi-attention AugmenTed
+                (BAT) graph neural network (GNN) for healthcare predictions. On two public
+                datasets, MIMIC-III and MIMIC-IV, GRAPHCARE surpasses baselines in four vital
+                healthcare prediction tasks: mortality, readmission, length of stay (LOS), and
+                drug recommendation. On MIMIC-III, it boosts AUROC by 17.6% and 6.6% for
+                mortality and readmission, and F1-score by 7.9% and 10.8% for LOS and drug
+                recommendation, respectively. Notably, GRAPHCARE demonstrates a substantial
+                edge in scenarios with limited data availability. Our findings highlight the potential
+                of using external KGs in healthcare prediction tasks and demonstrate the
+                promise of GRAPHCARE in generating personalized KGs for promoting personalized
+                medicine.},
+      author={Pengcheng Jiang and Cao Xiao and Adam Cross and Jimeng Sun},
+      booktitle = {The Twelfth International Conference on Learning Representations},
+      year={2024},
+      selected={true},
+      preview={graphcare.png},
+      pdf={https://arxiv.org/pdf/2305.12788},
+      slides={graphcare_slides.pdf},
+      code={https://github.com/pat-jj/GraphCare},
+      stars={true},
+      bibtex_show={true},
+      poster={graphcare_poster.pdf},
+}
+
+@inproceedings{jiang2025bilevel,
+  title={Bi-level Contrastive Learning for Knowledge-Enhanced Molecule Representations},
+  author={Pengcheng Jiang and Cao Xiao and Tianfan Fu and Jimeng Sun and Jiawei Han},
+  booktitle={Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence},
+  year={2025},
+  abstract={Molecule representation learning underpins diverse downstream applications such as molecular property and side effect understanding and prediction. In this paper, we recognize the two-level structure of individual molecules as having intrinsic graph structure as well as being a node in a large molecule knowledge graph, and present GODE, a new approach that seamlessly integrates graph representations of individual molecules with multi-domain biomedical data from knowledge graphs. By pre-training two graph neural networks (GNNs) on different graph structures, combined with contrastive learning, GODE adeptly fuses molecular structures with their corresponding knowledge graph substructures. This fusion results in a more robust and informative representation, enhancing molecular property prediction by harnessing both chemical and biological information. Fine-tuned on 11 chemical property tasks, our model surpasses benchmarks, achieving an average ROC-AUC improvement of 14.5\%, 9.8\%, and 7.3\% on BBBP, SIDER, and Tox21 datasets. In regression tasks on ESOL and QM7 datasets, we achieve average improvements of 21.0\% and 29.6\% in RMSE and MAE, setting a new field benchmark.},
+  show={true},
+  abbr={AAAI'25},
+  selected={true},
+  preview={gode.png},
+  pdf={gode.pdf},
+  code={https://github.com/pat-jj/Gode},
+  slides={slides_gode.pdf},
+  stars={true},
+  bibtex_show={true},
+  poster={gode_poster.pdf},
+}
+
+
+@inproceedings{jiang-etal-2024-trisum,
+      show={true},
+      abbr={NAACL'24},
+      title={TriSum: Learning Summarization Ability from Large Language Models with Structured Rationale}, 
+      abstract={The advent of large language models (LLMs) greatly
+        advanced natural language processing tasks, such as
+        text summarization. However, due to their substantial
+        model size, computational demands, and potential pri-
+        vacy concerns when transmitting sensitive data for re-
+        mote processing, their utility can be limited in resource-
+        constrained environments and applications prioritizing
+        data privacy. To address this, we introduce a frame-
+        work called TriSum to distill the text summarization
+        capabilities of LLMs into a more compact local model.
+        In the first step, we employ LLMs to probe and ex-
+        tract a collection of aspect-triple rationales and sum-
+        maries. We then refine them by employing a dual-
+        scoring method to identify the most high-quality ratio-
+        nales. Moving to the second step, we train a smaller lo-
+        cal model using these carefully organized summariza-
+        tion tasks. Our training strategy employs a curriculum
+        learning approach, gradually progressing from individ-
+        ual tasks to more complex combinations. Our evalua-
+        tions demonstrate that our TriSum method empowers
+        the local model to outperform baselines by 4.5%, 8.5%,
+        and 7.4% for the abstractive summarization task on CN-
+        N/DailyMail, XSum, and ClinicalTrial respectively. Be-
+        yond improved performance, our approach also offers
+        insights into the rationale guiding the summarization
+        process, thus enhancing interpretability.},
+      author={Pengcheng Jiang and Cao Xiao and Zifeng Wang and Parminder Bhatia and Jimeng Sun and Jiawei Han},
+      selected={true},
+      preview={trisum.png},
+      slides={slides_trisum.pdf},
+      booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+      year={2024},
+      pdf={https://aclanthology.org/2024.naacl-long.154.pdf},
+      code={https://github.com/pat-jj/TriSum},
+      bibtex_show={true},
+      poster={trisum_poster.pdf}
+      }
+
+@inproceedings{jiang-etal-2024-genres,
+      show={true},
+      abbr={NAACL'24},
+      title={GenRES: Rethinking Evaluation for Generative Relation Extraction in the Era of Large Language Models}, 
+      abstract={The field of relation extraction (RE) is experiencing a notable shift towards generative relation extraction (GRE), leveraging the capabilities of large language models (LLMs). However, we discovered that traditional relation extraction (RE) metrics like precision and recall fall short in evaluating GRE methods. This shortfall arises because these metrics rely on exact matching with human-annotated reference relations, while GRE methods often produce diverse and semantically accurate relations that differ from the references. To fill this gap, we introduce \textsc{GenRES} for a multi-dimensional assessment in terms of the topic similarity, uniqueness, granularity, factualness, and completeness of the GRE results. With \textsc{GenRES}, we empirically identified that (1) precision/recall fails to justify the performance of GRE methods; (2) human-annotated referential relations can be incomplete; (3) prompting LLMs with a fixed set of relations or entities can cause hallucinations. Next, we conducted a human evaluation of GRE methods that shows \textsc{GenRES} is consistent with human preferences for RE quality. Last, we made a comprehensive evaluation of fourteen leading LLMs using \textsc{GenRES} across document, bag, and sentence level RE datasets, respectively, to set the benchmark for future research in GRE. },
+      author={Pengcheng Jiang and Jiacheng Lin and Zifeng Wang and Jimeng Sun and Jiawei Han},
+      selected={true},
+      preview={genres.png},
+      booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+      year={2024},
+      pdf={https://aclanthology.org/2024.naacl-long.155.pdf},
+      slides={slides_genres.pdf},
+      code={https://github.com/pat-jj/GenRES},
+      stars={true},
+      bibtex_show={true},
+      poster={genres_poster.pdf},
+}
+
+@inproceedings{jiang-etal-2023-text,
+    show={true},
+    abbr={ACL'23},
+    title = "Text Augmented Open Knowledge Graph Completion via Pre-Trained Language Models",
+    author = "Jiang, Pengcheng  and
+      Agarwal, Shivam  and
+      Jin, Bowen  and
+      Wang, Xuan  and
+      Sun, Jimeng  and
+      Han, Jiawei",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.709",
+    doi = "10.18653/v1/2023.findings-acl.709",
+    pages = "11161--11180",
+    abstract = "The mission of open knowledge graph (KG) completion is to draw new findings from known facts. Existing works that augment KG completion require either (1) factual triples to enlarge the graph reasoning space or (2) manually designed prompts to extract knowledge from a pre-trained language model (PLM), exhibiting limited performance and requiring expensive efforts from experts. To this end, we propose TagReal that automatically generates quality query prompts and retrieves support information from large text corpora to probe knowledge from PLM for KG completion. The results show that TagReal achieves state-of-the-art performance on two benchmark datasets. We find that TagReal has superb performance even with limited training data, outperforming existing embedding-based, graph-based, and PLM-based methods.",
+    selected={true},
+    preview={tagreal.png},
+    pdf={https://aclanthology.org/2023.findings-acl.709.pdf},
+    slides={tagreal_slides.pdf},
+    code={https://github.com/pat-jj/TagReal},
+    stars={true},
+    bibtex_show={true},
+    poster={tagreal_poster.pdf},
+}
+
+@inproceedings{kang-etal-2024-taxonomy,
+    title = "Taxonomy-guided Semantic Indexing for Academic Paper Search",
+    author = "Kang, SeongKu  and
+      Zhang, Yunyi  and
+      Jiang, Pengcheng  and
+      Lee, Dongha  and
+      Han, Jiawei  and
+      Yu, Hwanjo",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.407",
+    doi = "10.18653/v1/2024.emnlp-main.407",
+    pages = "7169--7184",
+    abstract = "Academic paper search is an essential task for efficient literature discovery and scientific advancement. While dense retrieval has advanced various ad-hoc searches, it often struggles to match the underlying academic concepts between queries and documents, which is critical for paper search. To enable effective academic concept matching for paper search, we propose Taxonomy-guided Semantic Indexing (TaxoIndex) framework. TaxoIndex extracts key concepts from papers and organizes them as a semantic index guided by an academic taxonomy, and then leverages this index as foundational knowledge to identify academic concepts and link queries and documents. As a plug-and-play framework, TaxoIndex can be flexibly employed to enhance existing dense retrievers. Extensive experiments show that TaxoIndex brings significant improvements, even with highly limited training data, and greatly enhances interpretability.",
+    bibtex_show={true},
+    abbr={EMNLP'24},
+    code={https://github.com/SeongKu-Kang/TaxoIndex_EMNLP24},
+    pdf={https://aclanthology.org/2024.emnlp-main.407.pdf},
+    show={true},
+    selected={true},
+    preview={taxoindex.png},
+}
+
+@inproceedings{10.1145/3580305.3599178,
+  show={true},
+  abbr={KDD'23},
+  author = {Yang, Chaoqi and Wu, Zhenbang and Jiang, Patrick and Lin, Zhen and Gao, Junyi and Danek, Benjamin and Sun, Jimeng},
+  title = {PyHealth: A Deep Learning Toolkit for Healthcare Applications},
+  year = {2023},
+  isbn = {9798400701030},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3580305.3599178},
+  doi = {10.1145/3580305.3599178},
+  abstract = {Deep learning (DL) has emerged as a promising tool in healthcare applications. However, the reproducibility of many studies in this field is limited by the lack of accessible code implementations and standard benchmarks. To address the issue, we create PyHealth, a comprehensive library to build, deploy, and validate DL pipelines for healthcare applications. PyHealth supports various data modalities, including electronic health records (EHRs), physiological signals, medical images, and clinical text. It offers various advanced DL models and maintains comprehensive medical knowledge systems. The library is designed to support both DL researchers and clinical data scientists. Upon the time of writing, PyHealth has received 633 stars, 130 forks, and 15k+ downloads in total on GitHub.This tutorial will provide an overview of PyHealth, present different modules, and showcase their functionality through hands-on demos. Participants can follow along and gain hands-on experience on the Google Colab platform during the session.},
+  booktitle = {The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages = {5788–5789},
+  numpages = {2},
+  keywords = {healthcare, medical knowledge graph, medical codes, biosignal, electronic health record, medical text, medical image, deep learning},
+  location = {Long Beach, CA, USA},
+  series = {KDD '23},
+  selected={true},
+  preview={pyhealth-logo.png},
+  pdf={https://dl.acm.org/doi/pdf/10.1145/3580305.3599178},
+  code={https://github.com/sunlabuiuc/PyHealth},
+  stars={true},
+  bibtex_show={true},
+}
+
+
+@misc{jiang2023medkg,
+      show={true},
+      abbr={Report},
+      title={MedKG: Empowering Medical Education with Interactive Construction and Visualization of KGs via LLMs}, 
+      abstract={The field of relation extraction (RE) is experiencing a notable shift towards generative relation extraction (GRE), leveraging the capabilities of large language models (LLMs). However, we discovered that traditional relation extraction (RE) metrics like precision and recall fall short in evaluating GRE methods. This shortfall arises because these metrics rely on exact matching with human-annotated reference relations, while GRE methods often produce diverse and semantically accurate relations that differ from the references. To fill this gap, we introduce \textsc{GenRES} for a multi-dimensional assessment in terms of the topic similarity, uniqueness, granularity, factualness, and completeness of the GRE results. With \textsc{GenRES}, we empirically identified that (1) precision/recall fails to justify the performance of GRE methods; (2) human-annotated referential relations can be incomplete; (3) prompting LLMs with a fixed set of relations or entities can cause hallucinations. Next, we conducted a human evaluation of GRE methods that shows \textsc{GenRES} is consistent with human preferences for RE quality. Last, we made a comprehensive evaluation of fourteen leading LLMs using \textsc{GenRES} across document, bag, and sentence level RE datasets, respectively, to set the benchmark for future research in GRE. },
+      author={Pengcheng Jiang and Megan Lim and Adam Cross and Jimeng Sun},
+      year={2023},
+      primaryClass={cs.AI},
+      selected={true},
+      preview={medkg.png},
+      pdf={medgraph-jamia.pdf},
+      code={https://github.com/pat-jj/TextbookKG},
+      stars={true},
+      bibtex_show={true},
+}
+

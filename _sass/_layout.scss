@@ -1,0 +1,92 @@
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+// Profile
+.profile {
+  img {
+    width: 70%;
+    margin-left: 20%;
+  }
+}
+
+#clustrmaps-container {
+  padding-bottom: -20px;
+  left: auto;   /* This positions the widget 10px from the right side of the page */
+  padding-top: 0px;
+  padding-right: 0%;
+  z-index: 1000;    /* This ensures the widget stays on top of other page elements */
+  height: 100px;
+  width: 100px;
+}
+
+.pyhealth-logo {
+  width: 140px;  /* Adjust this value to your desired width */
+  height: 80px; /* Adjust this value to your desired height */
+  margin-left: 10px; /* Space between the logo and the software name */
+  vertical-align: middle; /* Aligns the logo with the software name */
+}
+
+.kgsphere-logo {
+  width: 100px;  /* Adjust this value to your desired width */
+  height: 80px; /* Adjust this value to your desired height */
+  margin-left: 10px; /* Space between the logo and the software name */
+  vertical-align: middle; /* Aligns the logo with the software name */
+}
+
+.software-section {
+  display: flex;
+  align-items: center; /* Vertically centers the logo and software name */
+}
+
+/* Hide by default */
+.preview-container {
+  display: none !important;
+}
+
+/* Show when screen width is greater than 400px */
+@media screen and (min-width: 400px) {
+  .preview-container {
+    display: block !important;
+  }
+}
+
+// TODO: redefine content layout.
+
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
+
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// TODO: redefine projects layout.

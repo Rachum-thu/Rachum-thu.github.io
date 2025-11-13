@@ -1,0 +1,449 @@
+---
+layout: default
+---
+
+<!-- about.html -->
+      <div class="post">
+        
+        <img src="{{ 'assets/img/top_img.jpeg' | relative_url }}" alt="Top Image" class="img-fluid" style="margin-bottom: 50px; margin-top: -50px">
+
+        <header class="post-header">
+          <h1 class="post-title">
+            {% if site.title == "blank" -%}
+              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+            {%- else -%}
+              {{ site.title }}
+            {%- endif %}
+          </h1>
+          <p class="desc">{{ page.subtitle }}</p>
+        </header>
+
+        <article>
+          {% if page.profile -%}
+          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+            {%- if page.profile.image %}
+              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+              {%- assign profile_image_anime_path = page.profile.image_anime | prepend: 'assets/img/' -%}
+              {%- assign profile_image_real_path = page.profile.image_real | prepend: 'assets/img/' -%}
+
+              {% if page.profile.image_circular %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {% else %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+              {% endif %}
+
+              <!-- Simplified single photo display (OLD DUAL PHOTO CODE COMMENTED OUT) -->
+              <div style="margin-bottom: 15px;">
+                <img src="{{ profile_image_path | relative_url }}"
+                     class="{{ profile_image_class }}"
+                     alt="Profile Photo">
+              </div>
+
+              <!-- OLD CODE - Photo switching with toggle button (DISABLED)
+              <div id="profile-photo-container" style="position: relative; margin-bottom: 15px;">
+                <img id="profile-photo-real"
+                     src="{{ profile_image_real_path | relative_url }}"
+                     class="{{ profile_image_class }}"
+                     alt="Real Photo"
+                     style="position: absolute; top: 0; left: 0; opacity: 0; transition: all 2s ease-in-out; filter: blur(0px); transform: scale(1);">
+
+                <img id="profile-photo-anime"
+                     src="{{ profile_image_anime_path | relative_url }}"
+                     class="{{ profile_image_class }}"
+                     alt="Anime Photo"
+                     style="opacity: 1; transition: all 2s ease-in-out; filter: blur(0px); transform: scale(1);">
+              </div>
+
+              <script>
+                // Photo switching JavaScript (DISABLED)
+              </script>
+              END OF OLD CODE -->
+            {% endif -%}
+            <style>
+              .fa.fa-twitter {
+                font-family: sans-serif;
+              }
+              .fa.fa-twitter:before {
+                content: "𝕏";
+                font-size: 1.2em;
+              }
+              .fab, .fa, .ai {
+                transition: color 0.3s ease;
+              }
+              a:hover .fa-github {
+                color: #9b4dca; /* Purple */
+              }
+              a:hover .fa-twitter {
+                color: #2ecc71; /* Green */
+              }
+              a:hover .ai-google-scholar {
+                color: #3498db; /* Blue */
+              }
+
+              /* Gradient animation for photo toggle button */
+              @keyframes gradientShift {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+
+              /* New section title animations */
+              .section-title {
+                position: relative;
+                display: inline-block;
+                padding-left: 40px;
+              }
+
+              .section-title::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.8;
+                transition: transform 0.3s ease;
+              }
+
+              .section-title:hover::before {
+                transform: translateY(-50%) scale(1.1);
+              }
+
+              .publications-title::before {
+                background-image: url('{{ "assets/img/icons/publications.svg" | relative_url }}');
+                animation: float 3s ease-in-out infinite;
+              }
+
+              .experience-title::before {
+                background-image: url('{{ "assets/img/icons/experience.svg" | relative_url }}');
+                animation: bounce 2s ease-in-out infinite;
+              }
+
+              .talks-title::before {
+                background-image: url('{{ "assets/img/icons/talks.svg" | relative_url }}');
+                animation: pulse 2s ease-in-out infinite;
+              }
+
+              .software-title::before {
+                background-image: url('{{ "assets/img/icons/software.svg" | relative_url }}');
+                animation: spin 3s linear infinite;
+              }
+
+              @keyframes float {
+                0%, 100% { transform: translateY(-50%) translateY(0); }
+                50% { transform: translateY(-50%) translateY(-5px); }
+              }
+
+              @keyframes bounce {
+                0%, 100% { transform: translateY(-50%) scale(1); }
+                50% { transform: translateY(-50%) scale(1.1); }
+              }
+
+              @keyframes pulse {
+                0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.8; }
+                50% { transform: translateY(-50%) scale(1.1); opacity: 1; }
+              }
+
+              @keyframes spin {
+                0% { transform: translateY(-50%) rotate(0deg); }
+                100% { transform: translateY(-50%) rotate(360deg); }
+              }
+            </style>
+            <div style="display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+              <!-- OLD CODE - Toggle button removed -->
+              <a href="https://github.com/pat-jj" target="_blank" rel="noopener noreferrer" style="margin-right: 5px;">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a href="https://x.com/patpcj" target="_blank" rel="noopener noreferrer" style="margin-right: 5px;">
+                <i class="fa fa-twitter fa-lg"></i>
+              </a>
+              <a href="https://scholar.google.com/citations?hl=en&user=TejDN9wAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="_blank" rel="noopener noreferrer">
+                <i class="ai ai-google-scholar ai-lg"></i>
+              </a>
+              <!-- <img src="assets/img/signature.png" style="width: 80px; height: auto; padding-right: -20px;"> -->
+            </div>
+            <!-- <a class="float-right">Email: pj20[at]illinois.edu</a> -->
+            <!-- <a href="{{'assets/pdf/CV.pdf'}}" target="_blank" rel="noopener noreferrer" class="float-right">CV <i class="fas fa-file-pdf"></i></a> -->
+            {%- if page.profile.address %}
+            <div class="address">
+              {{ page.profile.address }}
+            </div>
+            {%- endif %}
+          </div>
+          {%- endif %}
+
+          <div class="clearfix">
+            {{ content }}
+          </div>
+
+          <!-- News -->
+          {% if page.news and site.announcements.enabled -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            {%- include news.html limit=true %}
+          {%- endif %}
+
+          <!-- Latest posts -->
+          {% if page.latest_posts -%}
+            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            {%- include latest_posts.html %}
+          {%- endif %}
+
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
+              <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">
+                <span class="section-title publications-title"><strong>Publications</strong> <small><span style="font-size: 0.75em;">(2022.9 - present)</span></small></span>
+              </a>
+            </h2>
+            {%- include selected_papers.html %}
+          {% endif %}
+
+          <!-- Industry Experience -->
+          <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
+            <a style="color: inherit;">
+              <span class="section-title experience-title"><strong>Industry Experience</strong></span>
+            </a>
+          </h2>
+              
+              
+          <div class="experience-entry" style="display: flex; margin-bottom: 30px; align-items: center; padding-top: 30px;">
+            <div class="company-logo" style="width: 200px; margin-right: 40px;">
+              <a href="https://research.google/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/google-logo.jpg" alt="Google Logo" style="width: 100%; height: auto;">
+              </a>
+            </div>
+            <div class="experience-details">
+              <h5><b><a href="https://research.google/" target="_blank" rel="noopener noreferrer">Google Research</a></b></h5>
+              <p class="position">Student Researcher</p>
+              <p class="duration">Summer & Fall 2025 | Mountain View, USA</p>
+            </div>
+          </div>
+
+          <details>
+            <summary style="cursor: pointer; color: #666; margin-bottom: 20px;">Pre-PhD Industry Experience</summary>
+            
+            <div class="experience-entry" style="display: flex; margin-bottom: 30px; align-items: center;">
+              <div class="company-logo" style="width: 200px; margin-right: 40px;">
+                <a href="https://www.gehealthcare.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/ge-logo.jpg" alt="GE HealthCare Logo" style="width: 100%; height: auto;">
+                </a>
+              </div>
+              <div class="experience-details">
+                <h5><b><a href="https://www.gehealthcare.com/" target="_blank" rel="noopener noreferrer">GE HealthCare</a></b></h5>
+                <p class="position">Research Scientist Intern</p>
+                <p class="duration">Summer 2024 | Seattle, USA</p>
+              </div>
+            </div>
+
+            <div class="experience-entry" style="display: flex; margin-bottom: 30px; align-items: center;">
+              <div class="company-logo" style="width: 200px; margin-right: 40px;">
+                <a href="https://www.antgroup.com/en" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/ant-logo.jpeg" alt="Ant Group Logo" style="width: 100%; height: auto;">
+                </a>
+              </div>
+              <div class="experience-details">
+                <h5><b><a href="https://www.antgroup.com/en" target="_blank" rel="noopener noreferrer">Ant Group</a></b></h5>
+                <p class="position">AI Software Engineer</p>
+                <p class="duration">Nov. 2021 - Jul. 2022 | Hangzhou, CN</p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Talks -->
+          <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
+            <a style="color: inherit;">
+              <span class="section-title talks-title"><strong>Tutorials & Talks</strong></span>
+            </a>
+          </h2>
+
+          <div style="background: #f4f9fe; border-radius: 12px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); height: 400px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #cbd5e0 #f8f9fa;">
+            <style>
+              /* Webkit scrollbar styling */
+              div::-webkit-scrollbar {
+                width: 6px;
+              }
+              div::-webkit-scrollbar-track {
+                background: #f8f9fa;
+                border-radius: 4px;
+              }
+              div::-webkit-scrollbar-thumb {
+                background: #cbd5e0;
+                border-radius: 4px;
+              }
+              div::-webkit-scrollbar-thumb:hover {
+                background: #a0aec0;
+              }
+            </style>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">Talk of s3 @ Meta PhD Forum</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">Meta | Oct 30 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">Google Research Internal Talk (Athena)</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">Google Research | Aug 21 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">Retrieval And Structuring Augmented Generation with Large Language Models</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">KDD 2025 Tutorial | <a href="https://sites.google.com/view/ras-llm" target="_blank" rel="noopener noreferrer">Website Link</a> | Aug 03 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">MedKLM: Unifying Large Language Models and Knowledge Graphs for Medicine and Healthcare</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">KDD 2025 Tutorial | <a href="https://sites.google.com/view/medklm2025/home" target="_blank" rel="noopener noreferrer">Website Link</a> | Aug 04 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">General Research Talk</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">Hong Kong University of Science and Technology (HKUST) | Jun 26 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">DeepRetrieval: Pushing the Boundaries of Information Retrieval with LLMs in Health Domain</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">National Institutes of Health (NIH) | May 2 2025</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">Reasoning-Enhanced Healthcare Predictions with Knowledge Graphs</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">BioNLP Group @ UMass Amherst | Dec 13 2024</p>
+            </div>
+
+            <div class="talk-entry" style="margin-bottom: 0">
+              <h5 style="margin-bottom: 3px; font-size: 0.95em;">
+                <b style="color: #2c3e50;">PyHealth Hands-on Tutorial</b>
+              </h5>
+              <p style="color: #7f8c8d; margin: 0; font-size: 0.85em;">KDD 2023 Tutorial | <a href="https://pyhealth.readthedocs.io/en/develop/" target="_blank" rel="noopener noreferrer">Website Link</a> | Aug 06 2023</p>
+            </div>
+          </div>
+
+          <!-- Software -->
+          <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236); padding-bottom: 30px;">
+            <a href="/software/" style="color: inherit;">
+              <span class="section-title software-title"><strong>Software & Models</strong></span>
+            </a>
+          </h2>
+
+          <!-- Badges under PyHealth -->
+          <p><h5><a href="https://pyhealth.readthedocs.io/en/latest/">PyHealth</a> - A Deep Learning Toolkit for Healthcare</h5></p>
+          <!-- <div class="software-section">
+            <img src="/assets/img/publication_preview/pyhealth-logo.png" alt="PyHealth Logo" class="pyhealth-logo">
+          </div> -->
+          <div class="software_icons">
+              <a href="https://pypi.org/project/pyhealth/" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.shields.io/pypi/v/pyhealth.svg?color=brightgreen" alt="PyPI version">
+              </a>
+              <a href="https://pyhealth.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://readthedocs.org/projects/pyhealth/badge/?version=latest" alt="Documentation status">
+              </a>
+              <a href="https://github.com/sunlabuiuc/pyhealth/stargazers" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/stars/sunlabuiuc/pyhealth.svg" alt="GitHub stars">
+              </a>
+              <a href="https://github.com/sunlabuiuc/pyhealth/network" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/forks/sunlabuiuc/pyhealth.svg?color=blue" alt="GitHub forks">
+              </a>
+              <a href="https://pepy.tech/project/pyhealth" target="_blank" rel="noopener noreferrer">
+                  <img src="https://pepy.tech/badge/pyhealth" alt="Downloads">
+              </a>
+              <a href="https://pyhealth.readthedocs.io/en/latest/tutorials.html" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/badge/Tutorials-Google%20Colab-red" alt="Tutorials">
+              </a>
+          </div>
+          <p>Main Developers: Chaoqi Yang, Zhenbang Wu, <b>Patrick Jiang</b>, Zhen Lin, Benjamin Danek</p>
+
+          <p><h5><a href="https://pat-jj.github.io/TextbookKG/">TxBKG</a> - Convert Any PDFs into Highly Interactive Knowledge Graphs!</h5></p>
+          <!-- <div class="software-section">
+            <img src="/assets/img/kgsphere-logo.png" alt="KGSphere Logo" class="kgsphere-logo">
+          </div> -->
+          <div class="software_icons">
+              <a href="https://github.com/pat-jj/TextbookKG/stargazers" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/stars/pat-jj/TextbookKG.svg" alt="GitHub stars">
+              </a>
+              <a href="https://github.com/pat-jj/TextbookKG/network" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/forks/pat-jj/TextbookKG?color=blue" alt="GitHub forks">
+              </a>
+          </div>
+          <p>Developer: <b>Patrick Jiang</b></p>
+
+          <p><h5>Text2Graph-LLM: Specialized LLMs for Converting Text to Graphs</h5></p>
+          <div class="software_icons">
+            <a style="margin-right: 10px;">HuggingFace Model Links:</a>
+
+            <a href="https://huggingface.co/pat-jj/text2graph-llama-3.2-3b" style="margin-right: 20px; color: #eb7018;"><b>LLaMA-3.2-3B based</b></a>
+            
+            <a href="https://huggingface.co/pat-jj/text2triple-flan-t5" style="color: #3a42e3;"><b>Flan-T5-Large based</b></a>
+          </div>
+          <p>Developer: <b>Patrick Jiang</b></p>
+
+          <p><h5>DeepRetrieval: Hacking Real Search Engines and Retrievers with LLMs via RL</h5></p>
+          <div class="software_icons">
+            <div class="software_icons">
+              <a href="https://github.com/pat-jj/DeepRetrieval/stargazers" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/stars/pat-jj/DeepRetrieval.svg" alt="GitHub stars">
+              </a>
+              <a href="https://github.com/pat-jj/DeepRetrieval/network" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.shields.io/github/forks/pat-jj/DeepRetrieval?color=blue" alt="GitHub forks">
+              </a>
+            </div>
+            <a style="margin-right: 10px;">HuggingFace Link:</a>
+
+            <a href="https://huggingface.co/DeepRetrieval" style="margin-right: 23px; color: #9712d0;"><b>Datasets & Models</b></a>
+            
+          </div>
+          <p>Developer: <b>Patrick Jiang</b>, Jiacheng Lin, Lang Cao</p>
+
+
+          <!-- Social -->
+          {%- if page.social %}
+            <div class="social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+
+              <div class="contact-note">
+                {{ site.contact_note }}
+              </div>
+
+            </div>
+          {%- endif %}
+        </article>
+
+        <h2 style="margin-top: 80px; border-bottom: 1px solid rgb(239, 236, 236);"></h2>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: left;">
+            <a href="https://scholar.google.com/citations?hl=en&user=TejDN9wAAAAJ&view_op=list_works&authuser=2&sortby=pubdate">
+              <img src="assets/img/google-scholar.png" style="width: 100px; height: auto;">
+            </a>
+            <a href="https://github.com/pat-jj">
+              <img src="assets/img/github-icon.png" style="width: 100px; height: auto;">
+            </a>
+            </div>
+          <div id="clustrmaps-container">
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=bWiKAH2bSIjAc4dLQ15AfqQN92lAkCtT2Bc8n2ovxw8"></script>
+          </div>
+
+        </div>
+        
+      
+
+</div>
