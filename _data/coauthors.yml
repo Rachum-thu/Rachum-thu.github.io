@@ -15,12 +15,30 @@
 "Han":
   - firstname: ["Jiawei"]
     url: http://hanj.cs.illinois.edu/
+  - firstname: ["Chi"]
+    url: https://glaciohound.github.io/
+  - firstname: ["Xu"]
+    url: https://thucsthanxu13.github.io/
+
+"Shen":
+  - firstname: ["Xingyu"]
+    url: https://scholar.google.com/citations?user=0_YJxkQAAAAJ&hl=en
+
+"Su":
+  - firstname: ["Yusheng"]
+    url: https://yushengsu-thu.github.io/
 
 "Sun":
   - firstname: ["Jimeng"]
     url: https://siebelschool.illinois.edu/about/people/faculty/jimeng
   - firstname: ["Maosong"]
     url: https://www.cs.tsinghua.edu.cn/csen/info/1312/4394.htm
+  - firstname: ["Xian"]
+    url: https://scholar.google.com/citations?user=Ds--FpwAAAAJ&hl=zh-CN
+
+"Ji":
+  - firstname: ["Heng"]
+    url: https://siebelschool.illinois.edu/about/people/faculty/hengji
 
 "Jin":
   - firstname: ["Bowen"]
@@ -29,12 +47,16 @@
 "Yang":
   - firstname: ["Chaoqi"]
     url: https://ycq091044.github.io/
+  - firstname: ["Cheng"]
+    url: https://yangchengbupt.github.io/
 
 "Wu":
   - firstname: ["Zhenbang"]
     url: https://zzachw.github.io/
   - firstname: ["Yesai"]
     url: https://scholar.google.com/citations?user=FAbe3_sAAAAJ&hl=zh-CN
+  - firstname: ["Tongshuang"]
+    url: https://www.cs.cmu.edu/~sherryw/
 
 "Lin":
   - firstname: ["Zhen"]
@@ -57,12 +79,18 @@
     url: https://sites.google.com/view/danicaxiao/home?pli=1
   - firstname: ["Jinfeng"]
     url: https://jxiao13.web.engr.illinois.edu/
+  - firstname: ["Chaojun"]
+    url: https://xcjthu.github.io/
 
 "Fu":
   - firstname: ["Tianfan"]
     url: https://futianfan.github.io/
   - firstname: ["Yuepeng"]
     url: https://scholar.google.com/citations?user=pAAONG4AAAAJ&hl=zh-CN
+
+"Fung":
+  - firstname: ["Yi Ren"]
+    url: https://mayrfung.github.io/
 
 "Cross":
   - firstname: ["Adam"]
@@ -84,6 +112,14 @@
   - firstname: ["Lang"]
     url: https://github.com/windszzlang
 
+"Chen":
+  - firstname: ["Weize"]
+    url: https://weizechen.com/
+
+"Cui":
+  - firstname: ["Ganqu"]
+    url: https://cgq15.github.io/
+
 "Jiang":
   - firstname: ["Minhao"]
     url: https://minhaoj2.github.io/
@@ -103,6 +139,8 @@
     url: https://yzhan238.github.io/
   - firstname: ["Zhong"]
     url: https://scholar.google.com/citations?user=NX5TeR4AAAAJ&hl=en
+  - firstname: ["Zhen"]
+    url: https://namezhenzhang.github.io/
 
 "Lee":
   - firstname: ["Dongha"]
@@ -112,9 +150,17 @@
   - firstname: ["Hwanjo"]
     url: https://sites.google.com/view/postechdi/member/faculty
 
+"Yi":
+  - firstname: ["Jing"]
+    url: https://jing-1.github.io/
+
 "Zhu":
   - firstname: ["Ruike"]
     url: https://www.linkedin.com/in/ruike-zhu-47b048190/
+  - firstname: ["Kunlun"]
+    url: https://kunlun-zhu.github.io/
+  - firstname: ["Yuzhang"]
+    url: https://github.com/Clancy-Zhu
 
 "Tian":
   - firstname: ["Runchu", "R."]
@@ -123,16 +169,30 @@
 "Xu":
   - firstname: ["Xueqiang"]
     url: https://www.linkedin.com/in/xueqiang-xu/
+  - firstname: ["Bokai"]
+    url: https://bokaixu.site/
 
 "Li":
   - firstname: ["Yanghao"]
     url: https://aclanthology.org/people/yanghao-li/
   - firstname: ["Dahai"]
     url: https://iclr.cc/virtual/2024/papers.html?filter=author&search=dahai%20li
+  - firstname: ["Bowen"]
+    url: https://scholar.google.com/citations?user=RLWXNf8AAAAJ&hl=en
+  - firstname: ["Guoliang"]
+    url: https://dbgroup.cs.tsinghua.edu.cn/ligl/
+
+"Dai":
+  - firstname: ["Zhenning"]
+    url: https://scholar.google.com/citations?user=9uaxvAkAAAAJ&hl=en
 
 "Deng":
   - firstname: ["Siyang"]
     url: https://aclanthology.org/people/siyang-deng/
+
+"Ding":
+  - firstname: ["Ning"]
+    url: https://www.stingning.cn/
 
 "Luo":
   - firstname: ["Qinyu"]
@@ -168,9 +228,23 @@
   - firstname: ["Yinxu"]
     url: https://openreview.net/profile?id=~Yinxu_Pan1
 
+"Phang":
+  - firstname: ["Jason"]
+    url: https://scholar.google.com/citations?user=hxbdOuoAAAAJ&hl=en
+
+"Hu":
+  - firstname: ["Shengding"]
+    url: https://shengdinghu.github.io/
+
 "Hui":
   - firstname: ["Haotian"]
     url: https://aclanthology.org/people/hui-haotian/
+
+"Huang":
+  - firstname: ["Yufei"]
+    url: https://huangyf530.github.io/
+  - firstname: ["Yuxiang"]
+    url: https://scholar.google.com/citations?user=nvCXW78AAAAJ&hl=zh-CN
 
 "Kargupta":
   - firstname: ["Priyanka"]
@@ -179,10 +253,6 @@
 "Liang":
   - firstname: ["Shihao"]
     url: https://scholar.google.com/citations?user=K-v_r9oAAAAJ&hl=zh-CN
-
-"Zhu":
-  - firstname: ["Kunlun"]
-    url: https://kunlun-zhu.github.io/
 
 "Kweon":
   - firstname: ["Wonbin"]
@@ -203,6 +273,8 @@
 "Yan":
   - firstname: ["Lan"]
     url: https://scholar.google.com/citations?user=Ewrk8eYAAAAJ&hl=en
+  - firstname: ["Junxi"]
+    url: https://scholar.google.com/citations?user=SaAZYIsAAAAJ&hl=zh-CN
 
 "Lu":
   - firstname: ["Yaxi"]
@@ -211,10 +283,14 @@
 "Tang":
   - firstname: ["Xiangru"]
     url: https://xiangrutang.github.io/
+  - firstname: ["Ziwei"]
+    url: https://www.ziwei-tang.com/
 
 "Zhao":
   - firstname: ["Sihan"]
     url: https://openreview.net/profile?id=~Sihan_Zhao1
+  - firstname: ["Weilin"]
+    url: https://brawny-college-5b2.notion.site/Weilin-Zhao-11d20b7deb8280388213d5f5ed072992
 
 "Hong":
   - firstname: ["Lauren"]
@@ -227,6 +303,12 @@
 "Zhou":
   - firstname: ["Jie"]
     url: https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en
+  - firstname: ["Xuanhe"]
+    url: https://db.zhouxh.store/
+
+"Zeng":
+  - firstname: ["Zheni"]
+    url: https://ellenzzn.github.io/zhenizeng/
 
 "Gerstein":
   - firstname: ["Mark"]
