@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Computer Science MS Student @ <a href='https://cs.illinois.edu/'>UIUC</a>
+subtitle: Incoming PhD Student @ <a href='https://cs.unc.edu/'>UNC-Chapel Hill</a>
 profile:
   align: right
   image: prof_pic.jpg
@@ -17,8 +17,8 @@ social: false  # includes social icons at the bottom of the page
 \\
 Hi! This is Runchu.
 
-I am a second year [**MSCS**](https://siebelschool.illinois.edu/academics/graduate/ms-program) student advised by Prof. [**Jiawei Han**](http://hanj.cs.illinois.edu/) on **LLM** related topics. I earned my Bachelor Degree from [**Tsinghua Unversity**](https://www.tsinghua.edu.cn/en/), where I was advised by Prof. [**Zhiyuan Liu**](https://nlp.csai.tsinghua.edu.cn/~lzy/) on **LLM agents**.
+I will be joining [**Prof. Mohit Bansal's Lab**](https://www.cs.unc.edu/~mbansal/) at [**UNC-Chapel Hill**](https://cs.unc.edu/) as a PhD student in Fall 2026, working on **Multimodal LLMs**.
 
-I am currently looking for 26 Fall PhD opportunities with special research interests in **Post-Training**,  **LLM agent for challenging tasks** and **LLM efficiency**.
+I am curretly a second year [**MSCS**](https://siebelschool.illinois.edu/academics/graduate/ms-program) student advised by Prof. [**Jiawei Han**](http://hanj.cs.illinois.edu/) on **LLM** related topics. I earned my Bachelor Degree from [**Tsinghua Unversity**](https://www.tsinghua.edu.cn/en/), where I was advised by Prof. [**Zhiyuan Liu**](https://nlp.csai.tsinghua.edu.cn/~lzy/) on **LLM agents**.
 
 Feel free to contact me for collaborations, connections, or any questions you may have whether by email (runchut2\[at\]illinois.edu) or through social media. Thank you!
