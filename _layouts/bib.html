@@ -43,19 +43,32 @@
           {% assign author_array_limit = site.max_author_limit %}
         {% endif %}
 
+        {%- assign has_equal_contribution = false -%}
+        {%- for author in entry.author_array -%}
+          {%- if author.last contains "*" or author.first contains "*" -%}
+            {%- assign has_equal_contribution = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
         {%- for author in entry.author_array limit: author_array_limit -%}
           {%- assign author_is_self = false -%}
+          {%- assign author_has_equal = false -%}
+          {%- if author.last contains "*" or author.first contains "*" -%}
+            {%- assign author_has_equal = true -%}
+          {%- endif -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+          {%- assign author_first_name = author.first | remove: "*" -%}
           
           {%- if author_last_name == "Tian" -%}
-              {%- if author.first == "Runchu" or author.first == "R." -%}
+              {%- if author_first_name == "Runchu" or author_first_name == "R." -%}
                   {%- assign author_is_self = true -%}
               {%- endif -%}
           {%- endif -%}
           {%- assign coauthor_url = nil -%}
           {%- if site.data.coauthors[author_last_name] -%}
             {%- for coauthor in site.data.coauthors[author_last_name] -%}
-              {%- if coauthor.firstname contains author.first -%}
+              {%- if coauthor.firstname contains author_first_name -%}
                 {%- assign coauthor_url = coauthor.url -%}
                 {%- break -%}
               {%- endif -%}
@@ -67,12 +80,12 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-          <strong><ins style="color:rgb(5, 5, 112); font-weight: bold;">{{author.first}} {{author.last}}</ins></strong>
+          <strong><ins style="color:rgb(5, 5, 112); font-weight: bold;">{{author_first_name}} {{author_last_name}}</ins></strong>{%- if author_has_equal -%}<sup>*</sup>{%- endif -%}
           {%- else -%}
             {%- if coauthor_url -%}
-              <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+              <a href="{{coauthor_url}}">{{author_first_name}} {{author_last_name}}</a>{%- if author_has_equal -%}<sup>*</sup>{%- endif -%}
             {%- else -%}
-              {{author.first}} {{author.last}}
+              {{author_first_name}} {{author_last_name}}{%- if author_has_equal -%}<sup>*</sup>{%- endif -%}
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
@@ -107,6 +120,10 @@
               }, '{{site.more_authors_animation_delay}}');
               "
           >{{more_authors_hide}}</span>
+        {%- endif -%}
+
+        {%- if has_equal_contribution -%}
+        <br><span style="font-size: 0.9em; color: #666;"><sup>*</sup>Equal contribution</span>
         {%- endif -%}
 
         </div>
