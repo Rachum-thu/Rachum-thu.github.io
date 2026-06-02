@@ -83,7 +83,7 @@ The site uses Jekyll collections to organize different types of content:
 ### Static Assets
 
 - **`files/`**: Uploadable files (PDFs, documents, etc.)
-  - Accessible at: `https://rachum-thu.github.io/files/filename.pdf`
+  - Accessible at: `https://runchu-tian.github.io/files/filename.pdf`
   - Example: CV is stored as `assets/Curriculum_Vitae.pdf`
 
 - **`images/`**: Image files for the site
@@ -122,8 +122,8 @@ author_profile: true
 ```
 
 ### Site URLs
-- Base URL: `https://rachum-thu.github.io`
-- Repository: `Rachum-thu/Rachum-thu.github.io`
+- Base URL: `https://runchu-tian.github.io`
+- Repository: `runchu-tian/runchu-tian.github.io`
 - Main branch: `master`
 
 ## Dependencies
