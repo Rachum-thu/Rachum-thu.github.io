@@ -1,3 +1,18 @@
+@inproceedings{tian2026corank,
+        show={true},
+        abbr={KDD'26},
+        title={CoRank: LLM-Based Compact Reranking with Document Features for Scientific Retrieval},
+        abstract={Scientific retrieval is essential for advancing scientific knowledge discovery. Within this process, document reranking plays a critical role in refining first-stage retrieval results. Recently, LLMs have become popular reranking backbones for their strong domain knowledge. However, standard LLM listwise reranking faces challenges in the scientific domain: first-stage retrieval is often suboptimal, and full-text reranking limits the number of candidates that can fit in the context window. To address these challenges, we propose CoRank, a training-free, model-agnostic reranking framework that extracts semantic document features, performs coarse-grained reranking over compact representations, and then applies fine-grained reranking over full texts of the top candidates. Experiments on five academic retrieval datasets show that CoRank significantly improves reranking performance across different LLM backbones.},
+        author={Runchu Tian* and Xueqiang Xu* and Bowen Jin and SeongKu Kang and Jiawei Han†},
+        booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},
+        year={2026},
+        selected={true},
+        preview={corank.png},
+        pdf={corank.pdf},
+        code={https://github.com/runchu-tian/CoRank},
+        doi={10.1145/3770855.3818844},
+        bibtex_show={true}
+}
 @inproceedings{tian2025distance,
         show={true},
         abbr={ACL'25},
@@ -25,7 +40,6 @@
         preview={debugbench.png},
         pdf={https://aclanthology.org/2024.findings-acl.247.pdf},
         code={https://github.com/thunlp/DebugBench},
-        stars={true},
         bibtex_show={true}
 }
 
@@ -55,6 +69,21 @@
         preview={uit.png},
         pdf={https://openreview.net/pdf?id=n8fZ6mY6PB},
         code={https://github.com/thunlp/UnifiedInstructionTuning},
+        bibtex_show={true}
+}
+
+@inproceedings{kweon2026pairsem,
+        show={true},
+        abbr={WWW'26},
+        title={PairSem: LLM-Guided Pairwise Semantic Matching for Scientific Document Retrieval},
+        abstract={Scientific document retrieval is a critical task for enabling knowledge discovery and supporting research across diverse domains. However, existing dense retrieval methods often struggle to capture fine-grained scientific concepts in texts due to their reliance on holistic embeddings and limited domain understanding. PairSem represents relevant semantics as entity-aspect pairs, capturing complex, multi-faceted scientific concepts. It is unsupervised, base retriever-agnostic, and plug-and-play, enabling precise and context-aware matching without query-document labels or entity annotations.},
+        author={Wonbin Kweon and Runchu Tian and SeongKu Kang and Pengcheng Jiang and Zhiyong Lu and Jiawei Han and Hwanjo Yu},
+        booktitle = {Proceedings of the ACM Web Conference 2026},
+        year={2026},
+        selected={true},
+        preview={pairsem.png},
+        pdf={https://arxiv.org/pdf/2510.09897},
+        doi={10.1145/3774904.3792657},
         bibtex_show={true}
 }
 
